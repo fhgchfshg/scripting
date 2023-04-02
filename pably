@@ -52,20 +52,3 @@ end
 local _ = 96079043
 local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
 k(game.Players.LocalPlayer.Character, _)
-
-local plr = game.Players.LocalPlayer.Character
-    plr:WaitForChild("Head")
-    plr:WaitForChild("RightLowerLeg")
-    plr:WaitForChild("RightUpperLeg")
-    plr:WaitForChild("RightFoot")
-    plr.Head.MeshId = 0
-    plr.Head.face:Destroy()
-
-game.Players.LocalPlayer.CharacterAdded:Connect(function(plr)
-    plr:WaitForChild("Head")
-    plr:WaitForChild("RightLowerLeg")
-    plr:WaitForChild("RightUpperLeg")
-    plr:WaitForChild("RightFoot")
-    plr.Head.MeshId = 0
-    plr.Head.face:Destroy()
-end)
